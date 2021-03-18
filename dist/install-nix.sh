@@ -52,6 +52,6 @@ fi
 nix-env --quiet -j8 -iA cachix -f https://cachix.org/api/v1/install
 cachix use emacs-ci
 
-nix-env -iA "$emacs_ci_version" -f "https://github.com/purcell/nix-emacs-ci/archive/master.tar.gz"
+nix-env -iA "$emacs_ci_version" -f "https://github.com/cedarbaum/nix-emacs-ci/archive/build-libgit.tar.gz"
 
 emacs -version
